@@ -74,6 +74,7 @@ async function Post({params: {slug}}: Props) {
                 />
                 <div className='w-64'>
                   <h3>{post.author.name}</h3>
+                  <PortableText value={post.author.bio} components={RichTextComponents}/>
                   <div></div>
                 </div>
               </div> 
